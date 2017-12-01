@@ -1,0 +1,21 @@
+.dotted {
+  border-style: dashed;
+  margin: 2rem 0;
+}
+
+.section-divider {
+  @include xy-grid-container;
+  @include xy-grid;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &__headline,
+  &__subheadline {
+    @include xy-cell(12);
+
+    @include breakpoint(large) {
+      @include xy-cell(8);
+    }
+  }
+}

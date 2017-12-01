@@ -1,0 +1,21 @@
+.hero {
+  @include xy-grid-container;
+
+  .hero__headline {
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    @include xy-cell(10);
+
+    @include breakpoint(medium) {
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+  }
+}
+
+@import 'modules/recent_projects';

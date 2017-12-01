@@ -1,0 +1,28 @@
+.recent-projects {
+  @include xy-grid-container;
+  @include xy-grid;
+
+  &__post {
+    @include xy-cell(12);
+
+    &:last-child {
+      display: none;
+    }
+
+    @include breakpoint(medium) {
+      @include xy-cell(6);
+    }
+
+    @include breakpoint(large) {
+      @include xy-cell(4);
+
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+
+  &__thumbnail {
+    margin-bottom: 1rem;
+  }
+}
