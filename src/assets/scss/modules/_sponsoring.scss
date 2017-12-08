@@ -1,0 +1,20 @@
+.sponsoring {
+  @include xy-grid-container;
+  @include xy-grid;
+
+  &__element {
+    @include xy-cell(12);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(medium) {
+      @include xy-cell(6);
+    }
+
+    @include breakpoint(large) {
+      @include xy-cell(3);
+    }
+  }
+}

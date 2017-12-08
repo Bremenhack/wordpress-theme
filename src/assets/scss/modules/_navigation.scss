@@ -58,7 +58,7 @@
   .top-bar-title a {
     font-size: 1rem;
     color: #B9B9B9;
-    padding-left: 1rem;
+    padding-left: $global-padding / 2;
     line-height: 1.8;
   }
 
@@ -67,7 +67,7 @@
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: rem-calc(16);
     line-height: 1;
 
     &:hover:not(.button) {

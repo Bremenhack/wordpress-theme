@@ -7,8 +7,8 @@
   @include xy-grid-container;
   @include xy-grid;
 
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: $global-padding * 6;
+  margin-bottom: $global-padding * 2;
 
   &__headline,
   &__subheadline {
