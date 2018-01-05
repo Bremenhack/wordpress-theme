@@ -1,6 +1,10 @@
 .hero {
   @include xy-grid-container;
 
+  .hero__background {
+    display: none;
+  }
+
   @include breakpoint(medium) {
     background-image: url('../images/icongroup.svg');
     background-position: right;
@@ -18,7 +22,7 @@
 
     @include breakpoint(medium) {
       margin-top: 10rem;
-      margin-bottom: 15rem;
+      margin-bottom: 10rem;
       font-size: 4rem;
       line-height: 4rem;
     }

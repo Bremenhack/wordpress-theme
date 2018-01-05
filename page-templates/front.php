@@ -61,6 +61,13 @@ get_header(); ?>
   <?php else : ?>
     <p><?php __('No News'); ?></p>
   <?php endif; ?>
+  <div class="recent-projects__more">
+    <?php
+      $category_id = get_cat_ID( 'projekte' );
+      $category_link = get_category_link( $category_id );
+    ?>
+    <a class="button primary large" href="<?php echo esc_url( $category_link ); ?>">Alle Projekte zeigen</a>
+  </div>
 </div>
 
 <div class="section-divider">

@@ -1,12 +1,9 @@
 .about {
-  margin-top: $global-padding * 6;
-
-  padding-top: $global-padding * 2;
-  padding-bottom: $global-padding * 2;
-
-  background-color: $light-primary;
-
   &__wrapper {
+    border-top: 3px solid $dark-nav-color;
+    padding-top: $global-padding * 6;
+    padding-bottom: $global-padding * 2;
+
     @include xy-grid-container;
     @include xy-grid;
   }

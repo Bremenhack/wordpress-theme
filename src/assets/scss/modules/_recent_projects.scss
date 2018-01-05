@@ -25,4 +25,10 @@
   &__thumbnail {
     margin-bottom: 1rem;
   }
+
+  &__more {
+    margin-top: 2rem;
+    @include xy-cell(12);
+    text-align: center;
+  }
 }

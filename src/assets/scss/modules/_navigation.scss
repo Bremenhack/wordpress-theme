@@ -15,8 +15,12 @@
 }
 
 // Mobile menu
+.title-bar {
+  background: $primary-color;
+}
 .mobile-menu {
   display: none; // prevents repaint caused by JS hiding menu onload
+  background-color: darken($primary-color, 10%);
 }
 
 .off-canvas {
@@ -38,7 +42,7 @@
 .title-bar-title {
   a {
     font-size: 1rem;
-    color: #B9B9B9;
+    color: $white;
   }
 }
 
@@ -70,9 +74,8 @@
     font-size: rem-calc(16);
     line-height: 1;
 
-    &:hover:not(.button) {
-      background-color: lighten($primary-color, 50%);
-    }
+    border-bottom: 2px solid transparent;
+    transition: border .2s ease-in-out;
   }
 
   .menu .active > a { background-color: #ccc; }
@@ -96,10 +99,17 @@
   }
 
   .menu a {
-    color: $primary-color;
+    color: $white;
+    border-bottom: 2px solid transparent;
+
+    transition: border .2s ease-in-out;
 
     &:hover:not(.button) {
-      background-color: lighten($primary-color, 50%);
+      border-bottom: 2px solid $primary-color;
+    }
+
+    @include breakpoint(medium) {
+      color: $primary-color;
     }
   }
 }

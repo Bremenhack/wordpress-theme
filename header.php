@@ -29,7 +29,7 @@
 				<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
 				<span class="site-mobile-title title-bar-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<?php the_custom_logo(); ?>
+						Bremenhack
 					</a>
 				</span>
 			</div>

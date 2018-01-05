@@ -63,6 +63,7 @@
 @import "global/colors";
 @import "global/wp-admin";
 @import "global/wp-overrides";
+@import "global/typo-overrides";
 
 // Modules
 @import "modules/navigation";
@@ -71,6 +72,7 @@
 @import "modules/editor-style";
 
 // Components
+@import "components/sidebar";
 @import "components/buttons";
 @import "components/cards";
 @import "components/featured-image";
