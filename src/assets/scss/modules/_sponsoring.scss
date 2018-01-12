@@ -2,6 +2,8 @@
   @include xy-grid-container;
   @include xy-grid;
 
+  padding-bottom: $global-padding * 2;
+
   &__element {
     @include xy-cell(12);
 

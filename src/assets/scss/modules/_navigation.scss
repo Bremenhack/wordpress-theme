@@ -58,6 +58,7 @@
 
 .top-bar {
   @include xy-grid-container;
+  margin-top: $global-padding;
 
   .top-bar-title a {
     font-size: 1rem;
