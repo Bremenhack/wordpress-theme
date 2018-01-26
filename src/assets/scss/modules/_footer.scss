@@ -1,7 +1,8 @@
 .footer-container {
   margin: 0 auto;
-  border-top: 3px solid $primary-color;
   margin-top: rem-calc(60);
+  background-color: $dark-nav-color;
+  color: $white;
 }
 
 .footer {

@@ -4,11 +4,12 @@ Template Name: Front
 */
 get_header(); ?>
 
-<div class="hero" role="banner">
+<div class="hero animated fadeIn" role="banner">
   <h2 class="hero__headline"><?php the_field('hero_text'); ?></h2>
+  <div id="lottie" class="lottie"></div>
 </div>
 
-<div class="about">
+<div class="about animated fadeIn">
   <div class="about__wrapper">
     <div class="about__text">
       <h2><?php the_field('about_headline'); ?></h2>
