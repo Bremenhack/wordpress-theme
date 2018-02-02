@@ -5,8 +5,9 @@ Template Name: Front
 get_header(); ?>
 
 <div class="hero animated fadeIn" role="banner">
-  <h2 class="hero__headline"><?php the_field('hero_text'); ?></h2>
-  <div id="lottie" class="lottie"></div>
+  <div class="hero__wrapper">
+    <h2 class="hero__headline"><?php the_field('hero_text'); ?></h2>
+  </div>
 </div>
 
 <div class="about animated fadeIn">

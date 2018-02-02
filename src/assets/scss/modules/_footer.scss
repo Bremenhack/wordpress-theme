@@ -5,8 +5,11 @@
   color: $white;
 }
 
-.footer {
+.footer__wrapper {
   @include xy-grid-container;
+}
+
+.footer {
   @include xy-grid;
   @include xy-cell(auto);
   padding: rem-calc(30) 0;

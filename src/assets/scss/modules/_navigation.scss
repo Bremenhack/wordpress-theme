@@ -20,10 +20,12 @@
 // Mobile menu
 .title-bar {
   background: $primary-color;
+  padding: 1.5rem;
 }
 .mobile-menu {
   display: none; // prevents repaint caused by JS hiding menu onload
-  background-color: darken($primary-color, 10%);
+  background-color: $dark-nav-color;
+  padding: .625rem;
 }
 
 .off-canvas {
@@ -61,7 +63,7 @@
 
 .top-bar {
   @include xy-grid-container;
-  
+
   @include breakpoint(medium) {
     margin-top: $global-padding;
   }
@@ -107,12 +109,11 @@
 
   .menu a {
     color: $white;
-    border-bottom: 2px solid transparent;
 
-    transition: border .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
 
     &:hover:not(.button) {
-      border-bottom: 2px solid $primary-color;
+      background-color: lighten($dark-nav-color, 10%);
     }
 
     @include breakpoint(medium) {
