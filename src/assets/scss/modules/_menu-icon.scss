@@ -1,0 +1,18 @@
+.menu-icon {
+  width: rem-calc(40);
+  height: rem-calc(22);
+
+  &:after {
+    background: $white;
+    height: 3px;
+    box-shadow: 0 10px 0 $white, 0 20px 0 $white;
+  }
+
+  &:hover {
+    &:after {
+      background: $white;
+      height: 3px;
+      box-shadow: 0 10px 0 $white, 0 20px 0 $white;
+    }
+  }
+}

@@ -14,8 +14,20 @@
   @include xy-cell(auto);
   padding: rem-calc(30) 0;
 
-  section {
-    @include xy-cell(auto);
+  .widget {
+    @include xy-cell(12);
+    &:not(:first-child) {
+      margin-bottom: rem-calc(20);
+    }
+
+    @include breakpoint(large) {
+      @include xy-cell(4);
+    }
+
+    .widget {
+      margin: 0;
+      width: 100%;
+    }
   }
 
   ul {
