@@ -68,11 +68,19 @@
     margin-top: $global-padding;
   }
 
-  .top-bar-title a {
-    font-size: 1rem;
-    color: #B9B9B9;
-    padding-left: $global-padding / 2;
-    line-height: 1.8;
+  .custom-logo {
+    max-width: 201px;
+  }
+
+  .top-bar-title {
+    margin-top: .2rem;
+
+    a {
+      font-size: 1rem;
+      color: #B9B9B9;
+      padding-left: $global-padding / 2;
+      line-height: 1;
+    }
   }
 
   .menu a {
