@@ -77,31 +77,23 @@ get_header(); ?>
   <h4 class="section-divider__subheadline"><?php the_field('sponsoring_subheadline'); ?></h4>
 </div>
 
-<div class="sponsoring">
-  <div class="sponsoring__element">
-    <a href="<?php the_field('sponsor_link_primary'); ?>">
-      <img src="<?php the_field('sponsor_image_primary'); ?>" alt="Sponsorenbild">
-    </a>
+<?php if( have_rows('sponsoring') ): ?>
+  <div class="sponsoring">
+    <?php while( have_rows('sponsoring') ): the_row(); 
+      $image = get_sub_field('sponsor_image');
+      $link = get_sub_field('sponsor_link');
+    ?>
+    <div class="sponsoring__element">
+      <?php if( $link ): ?>
+        <a href="<?php echo $link; ?>">
+      <?php endif; ?>
+        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+      <?php if( $link ): ?>
+        </a>
+      <?php endif; ?>
+    </div>
+    <?php endwhile; ?>
   </div>
-
-  <div class="sponsoring__element">
-    <a href="<?php the_field('sponsor_link_secondary'); ?>">
-      <img src="<?php the_field('sponsor_image_secondary'); ?>" alt="Sponsorenbild">
-    </a>
-  </div>
-
-  <div class="sponsoring__element">
-    <a href="<?php the_field('sponsor_link_tertiary'); ?>">
-      <img src="<?php the_field('sponsor_image_tertiary'); ?>" alt="Sponsorenbild">
-    </a>
-  </div>
-
-  <div class="sponsoring__element">
-    <a href="<?php the_field('sponsor_link_quadrary'); ?>">
-      <img src="<?php the_field('sponsor_image_quadrary'); ?>" alt="Sponsorenbild">
-    </a>
-  </div>
-</div>
-
+<?php endif; ?>
 
 <?php get_footer();
