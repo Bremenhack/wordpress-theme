@@ -1,0 +1,60 @@
+.hero {
+    background-color: $primary-color;
+  
+    &__wrapper {
+      @include xy-grid-container;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      z-index: 1;
+  
+      @include breakpoint(medium) {
+        margin-top: .5rem;
+        padding-bottom: 10rem;
+      }
+  
+      @include breakpoint(large) {
+        background-image: url('../images/icongroup.svg');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 40%;
+      }
+    }
+  
+    &__headline {
+      @include xy-cell(12);
+
+      font-weight: bold;
+      font-size: 2.5rem;
+      line-height: 1.1;
+      color: $white;
+      
+      @include breakpoint(medium) {
+        margin-top: 10rem;
+        font-size: 4rem;
+      }
+  
+      @include breakpoint(large) {
+        @include xy-cell(10);
+      }
+    }
+
+    &__button {
+      @include xy-cell(12);
+      margin-top: 3rem;
+      background-color: $white;
+      color: $primary-color;
+
+      @include breakpoint(medium) {
+        @include xy-cell(5); 
+      }
+
+      @include breakpoint(large) {
+        @include xy-cell(3); 
+      }
+
+      &:hover {
+        color: $primary-color;
+        background-color: darken($white, 8%);
+      }
+    }
+  }
