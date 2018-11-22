@@ -9,7 +9,7 @@ get_header(); ?>
     <h2 class="hero__headline"><?php the_field('hero_text'); ?></h2>
 
     <?php if( get_field('hero_button_url') ): ?>
-      <a class="hero__button button large" href="<?php the_field('hero_button_url'); ?>">Jetzt Anmelden</a>
+      <a class="hero__button button large" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?></a>
     <?php endif; ?>
   </div>
 </div>
